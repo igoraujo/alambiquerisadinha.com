@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos – Alambique Risadinha</title>
+  <meta name="description" content="Conheça os produtos do Alambique Risadinha: Risadinha Prata, Risadinha Ouro e Velho Parque. Cachaças artesanais de Piranga, MG.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="https://www.anpaq.com.br/media/djcatalog2/images/item/2/alambique-risadinha-ltda_f.png" alt="Alambique Risadinha" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span class="logo-text-fallback" style="display:none">Alambique<br><em>Risadinha</em></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="produtos.html" class="nav-link active">Produtos</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-eyebrow light">Nossa Linha Completa</span>
+      <h1>Nossos Produtos</h1>
+      <p>Três rótulos únicos, cada um com sua história, seu caráter e sua personalidade. Descubra qual é o seu.</p>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS PAGE ===== -->
+  <section class="products-page section-padding">
+    <div class="container">
+
+      <!-- Filter -->
+      <div class="products-filter">
+        <button class="filter-btn active" data-filter="all">Todos os Produtos</button>
+        <button class="filter-btn" data-filter="prata">Risadinha Prata</button>
+        <button class="filter-btn" data-filter="ouro">Risadinha Ouro</button>
+        <button class="filter-btn" data-filter="parque">Velho Parque</button>
+      </div>
+
+      <!-- ─── RISADINHA PRATA ─── -->
+      <div class="product-detail-card" id="prata" data-product="prata">
+        <div class="product-detail-visual pv-prata">
+          <i class="fas fa-wine-bottle product-detail-icon"></i>
+          <span class="product-detail-badge badge-prata">Cachaça Prata</span>
+        </div>
+        <div class="product-detail-info">
+          <span class="section-eyebrow">Risadinha</span>
+          <h2>Risadinha Prata</h2>
+          <p class="product-subtitle">Pureza e Leveza em Cada Gota</p>
+          <p>A Risadinha Prata é a nossa cachaça branca clássica, destilada em alambiques de cobre e engarrafada sem envelhecimento em madeira, preservando todo o frescor e a pureza do caldo de cana fermentado.</p>
+          <p>Sua coloração cristalina e seu aroma limpo com notas florais e herbais fazem dela a escolha perfeita para caipirinhas, drinks e para quem aprecia o sabor genuíno da cana-de-açúcar mineira.</p>
+          <div class="product-attributes">
+            <div class="attr-item">
+              <span class="attr-label">Teor Alcoólico</span>
+              <span class="attr-value">38–40% vol.</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Cor</span>
+              <span class="attr-value">Cristalina</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Destilação</span>
+              <span class="attr-value">Alambique de Cobre</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Envelhecimento</span>
+              <span class="attr-value">Sem envelhecimento</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Sabor</span>
+              <span class="attr-value">Suave, fresco, herbáceo</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Harmonização</span>
+              <span class="attr-value">Caipirinhas e drinks</span>
+            </div>
+          </div>
+          <a href="contato.html" class="btn btn-primary">Onde Encontrar <i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+      <!-- ─── RISADINHA OURO ─── -->
+      <div class="product-detail-card reverse" id="ouro" data-product="ouro">
+        <div class="product-detail-visual pv-ouro">
+          <i class="fas fa-wine-bottle product-detail-icon"></i>
+          <span class="product-detail-badge badge-ouro">⭐ Mais Vendido</span>
+        </div>
+        <div class="product-detail-info">
+          <span class="section-eyebrow">Risadinha</span>
+          <h2>Risadinha Ouro</h2>
+          <p class="product-subtitle">A Riqueza do Tempo em Cada Sorvo</p>
+          <p>A Risadinha Ouro é o resultado da paciência e dedicação de nossos mestres destiladores. Envelhecida em barris de madeira nobre, adquire uma bela coloração âmbar dourada natural, aroma complexo com notas de caramelo, baunilha e especiarias.</p>
+          <p>No paladar, encontramos um equilíbrio perfeito entre a doçura da madeira e o caráter vigoroso da cana mineira. Um produto que honra a tradição e que pode ser apreciado puro, em temperatura ambiente.</p>
+          <div class="product-attributes">
+            <div class="attr-item">
+              <span class="attr-label">Teor Alcoólico</span>
+              <span class="attr-value">40% vol.</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Cor</span>
+              <span class="attr-value">Âmbar dourado</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Destilação</span>
+              <span class="attr-value">Alambique de Cobre</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Envelhecimento</span>
+              <span class="attr-value">Barris de madeira nobre</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Sabor</span>
+              <span class="attr-value">Aveludado, caramelo, baunilha</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Harmonização</span>
+              <span class="attr-value">Puro ou com gelo</span>
+            </div>
+          </div>
+          <a href="contato.html" class="btn btn-primary">Onde Encontrar <i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+      <!-- ─── VELHO PARQUE ─── -->
+      <div class="product-detail-card" id="parque" data-product="parque">
+        <div class="product-detail-visual pv-parque">
+          <i class="fas fa-wine-bottle product-detail-icon"></i>
+          <span class="product-detail-badge badge-parque">Premium</span>
+        </div>
+        <div class="product-detail-info">
+          <span class="section-eyebrow">Linha Premium</span>
+          <h2>Velho Parque</h2>
+          <p class="product-subtitle">A Joia da Nossa Produção Artesanal</p>
+          <p>O Velho Parque representa o ápice da nossa produção. Fruto de uma longa maturação em barris selecionados, esta cachaça premium é uma homenagem ao tempo, à paciência e ao saber-fazer que nos define há mais de 77 anos.</p>
+          <p>Sua complexidade aromática impressiona os mais experientes apreciadores: notas profundas de madeira, tabaco suave, frutas secas e um final extraordinariamente longo. Uma experiência que deve ser vivida lentamente, em boa companhia.</p>
+          <div class="product-attributes">
+            <div class="attr-item">
+              <span class="attr-label">Teor Alcoólico</span>
+              <span class="attr-value">40–43% vol.</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Cor</span>
+              <span class="attr-value">Marrom âmbar profundo</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Destilação</span>
+              <span class="attr-value">Alambique de Cobre</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Envelhecimento</span>
+              <span class="attr-value">Longa maturação, barris selecionados</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Sabor</span>
+              <span class="attr-value">Complexo, madeira, frutas secas</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-label">Harmonização</span>
+              <span class="attr-value">Puro, temperatura ambiente</span>
+            </div>
+          </div>
+          <a href="contato.html" class="btn btn-primary">Onde Encontrar <i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== COMO APRECIAR ===== -->
+  <section class="section-padding bg-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow light">Dicas do Mestre</span>
+        <h2 class="section-title light">Como Apreciar Nossa Cachaça</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-thermometer-half"></i></div>
+          <h3>Temperatura Ideal</h3>
+          <p>Cachaças envelhecidas devem ser servidas em temperatura ambiente (18–22°C). As brancas ficam melhores levemente geladas, entre 8–12°C.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-glass-whiskey"></i></div>
+          <h3>Taça Correta</h3>
+          <p>Para apreciar puro, use um cálice tulipa ou de whisky. Para caipirinhas e drinks, use o copo lowball com bastante gelo.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-nose"></i></div>
+          <h3>O Ritual do Aroma</h3>
+          <p>Antes de provar, gire suavemente o cálice e aprecie os aromas. Identifique as notas da madeira, da cana e do processo de destilação.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+          <h3>Harmonização</h3>
+          <p>O Velho Parque harmoniza com queijos curados, castanhas e chocolates amargos. A Prata é perfeita com frutos do mar e petiscos leves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="cta-overlay"></div>
+    <div class="container cta-content">
+      <h2>Interessado em Nossos Produtos?</h2>
+      <p>Entre em contato para saber onde encontrar nossas cachaças ou para pedidos especiais.</p>
+      <div class="cta-btns">
+        <a href="contato.html" class="btn btn-primary">Fale Conosco</a>
+        <a href="sobre.html" class="btn btn-outline-light">Nossa História</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="https://www.anpaq.com.br/media/djcatalog2/images/item/2/alambique-risadinha-ltda_f.png" alt="Alambique Risadinha" class="footer-logo" onerror="this.style.display='none'">
+        <p>Cachaça artesanal produzida com tradição e amor desde 1947, no coração de Minas Gerais.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/alambiquerisadinha/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-products">
+        <h4>Nossos Produtos</h4>
+        <ul>
+          <li><a href="#prata">Risadinha Prata</a></li>
+          <li><a href="#ouro">Risadinha Ouro</a></li>
+          <li><a href="#parque">Velho Parque</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Piranga, Minas Gerais – MG</li>
+          <li><i class="fas fa-envelope"></i> contato@alambiquerisadinha.com.br</li>
+          <li><i class="fab fa-instagram"></i> @alambiquerisadinha</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 Alambique Risadinha Ltda. Todos os direitos reservados.</p>
+        <p class="footer-warning"><i class="fas fa-exclamation-triangle"></i> Beba com moderação. Proibido para menores de 18 anos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
