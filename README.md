@@ -72,7 +72,7 @@ Site institucional do **Alambique Risadinha**, produtora de cachaça artesanal l
 |---------|------|-----------------|
 | **Risadinha Prata** | Cachaça branca | Cristalina, suave, ideal para caipirinhas |
 | **Risadinha Ouro** | Cachaça envelhecida | Âmbar dourado, aveludada, aroma complexo |
-| **Velho Parque** | Premium | Longa maturação, complexa, para colecionadores |
+| **Velho Parol** | Premium | Longa maturação, complexa, para colecionadores |
 
 ---
 
