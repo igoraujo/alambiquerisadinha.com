@@ -66,9 +66,15 @@
     transparent 25px
   );
 }
-.pv-prata { background: linear-gradient(135deg, #c8d4dd 0%, #e8eef3 100%); color: #8aa0b0; }
-.pv-ouro  { background: linear-gradient(135deg, #dfc07a 0%, #f5e6c0 100%); color: var(--gold); }
-.pv-parque{ background: linear-gradient(135deg, #c4a06b 0%, #e8d5b0 100%); color: var(--brown-mid); }
+.pv-prata { background: linear-gradient(135deg, rgba(61,31,10,0.1), rgba(28,59,31,0.1)),
+    url('./../img/products/risadinha-prata-fundo-alambique.png') bottom/cover no-repeat; 
+  }
+.pv-ouro { background: linear-gradient(135deg, rgba(61,31,10,0.1), rgba(28,59,31,0.1)),
+    url('./../img/products/risadinha-ouro-fundo-barril.jpg') center 54%/cover no-repeat; 
+  }
+.pv-parol { background: linear-gradient(135deg, rgba(61,31,10,0.1), rgba(28,59,31,0.1)),
+    url('./../img/products/velho-parol-fundo-barril.jpg') center 66%/cover no-repeat; 
+}
 
 .product-detail-icon {
   font-size: 7rem;
@@ -91,7 +97,7 @@
 }
 .badge-prata { background: rgba(140,160,180,0.9); color: #fff; }
 .badge-ouro  { background: var(--gold); color: #fff; }
-.badge-parque{ background: var(--green-dark); color: var(--gold-pale); }
+.badge-parol{ background: var(--green-dark); color: var(--gold-pale); }
 
 .product-detail-info .section-eyebrow { margin-bottom: 0.5rem; }
 .product-detail-info h2 {

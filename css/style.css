@@ -93,6 +93,7 @@ h1, h2, h3, h4 {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 14px 32px;
   border-radius: 4px;
@@ -104,6 +105,7 @@ h1, h2, h3, h4 {
   cursor: pointer;
   border: 2px solid transparent;
   transition: all var(--transition);
+  text-align: center;
 }
 
 .btn-primary {
@@ -114,6 +116,18 @@ h1, h2, h3, h4 {
 .btn-primary:hover {
   background: var(--gold-light);
   border-color: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201,146,42,0.35);
+}
+
+.btn-buy {
+  background: var(--white);
+  color: #511818;
+  border-color: var(--white);
+}
+.btn-buy:hover {
+  background: var(--brown-light);
+  border-color: var(--brown-light);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(201,146,42,0.35);
 }
@@ -243,7 +257,7 @@ h1, h2, h3, h4 {
   align-items: center;
   background: 
     linear-gradient(160deg, rgba(28,31,10,0.72) 0%, rgba(61,31,10,0.88) 60%, rgba(28,59,31,0.82) 100%),
-    url('https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=1800&q=80') center/cover no-repeat;
+    url('./../img/products/risadinha-3-fundo-barril.jpg') center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -531,17 +545,20 @@ h1, h2, h3, h4 {
 .product-card:hover .product-icon { transform: scale(1.12) rotate(-5deg); }
 .product-icon.prata {
   color: #b0b8c1;
-  background: linear-gradient(135deg, #dde4ea 0%, #eef1f4 100%);
+  background: linear-gradient(135deg, rgba(61,31,10,0.1), rgba(28,59,31,0.1)),
+    url('./../img/products/risadinha-barris.jpg') center/cover no-repeat;
   text-shadow: 0 4px 12px rgba(150,170,190,0.4);
 }
 .product-icon.ouro {
   color: var(--gold);
-  background: linear-gradient(135deg, #f5e6c8 0%, #faf0dc 100%);
+  background: linear-gradient(135deg, rgba(61,31,10,0.1), rgba(28,59,31,0.1)),
+    url('./../img/products/risadinha-barris.jpg') center/cover no-repeat;
   text-shadow: 0 4px 12px rgba(201,146,42,0.35);
 }
-.product-icon.parque {
+.product-icon.parol {
   color: var(--brown-mid);
-  background: linear-gradient(135deg, #e8d5b8 0%, #f2e4cc 100%);
+  background: linear-gradient(135deg, rgba(61,31,10,0.1), rgba(28,59,31,0.1)),
+    url('./../img/products/risadinha-barris.jpg') center/cover no-repeat;
   text-shadow: 0 4px 12px rgba(107,58,31,0.35);
 }
 
@@ -767,7 +784,7 @@ h1, h2, h3, h4 {
   padding: 100px 0;
   background:
     linear-gradient(135deg, rgba(28,59,31,0.92), rgba(61,31,10,0.95)),
-    url('https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=1600&q=80') center/cover no-repeat;
+    url('../img/products/background-produtos.png') center 80%/cover no-repeat;
   text-align: center;
   overflow: hidden;
 }
@@ -939,7 +956,7 @@ h1, h2, h3, h4 {
   padding: 140px 0 70px;
   background: 
     linear-gradient(135deg, rgba(61,31,10,0.94), rgba(28,59,31,0.9)),
-    url('https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=1600&q=80') center/cover no-repeat;
+    url('./../img/products/background-produtos.png') center/cover no-repeat;
   text-align: center;
 }
 .page-hero h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); color: var(--cream); margin-bottom: 1rem; }
