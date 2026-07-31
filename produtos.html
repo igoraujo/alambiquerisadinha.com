@@ -11,27 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
 </head>
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <header class="navbar scrolled" id="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="img/logo.png" alt="Alambique Risadinha Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-        <span class="logo-text-fallback" style="display:none">Alambique<br><em>Risadinha</em></span>
-      </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="produtos.html" class="nav-link active">Produtos</a>
-        <a href="sobre.html" class="nav-link">Sobre</a>
-        <a href="contato.html" class="nav-link">Contato</a>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+  <header id="header-placeholder" class="navbar"></header>
 
   <!-- ===== PAGE HERO ===== -->
   <section class="page-hero">
@@ -232,51 +221,10 @@
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="img/logo.png" alt="Alambique Risadinha Logo" class="footer-logo" onerror="this.style.display='none'">
-        <p>Cachaça artesanal produzida com tradição e amor desde 1947, no coração de Minas Gerais.</p>
-        <div class="social-links">
-          <a href="https://www.instagram.com/alambiquerisadinha/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </div>
-      <div class="footer-nav">
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </div>
-      <div class="footer-products">
-        <h4>Nossos Produtos</h4>
-        <ul>
-          <li><a href="#prata">Risadinha Prata</a></li>
-          <li><a href="#ouro">Risadinha Ouro</a></li>
-          <li><a href="#parol">Velho Parol</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h4>Contato</h4>
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Piranga, Minas Gerais – MG</li>
-          <li><i class="fas fa-envelope"></i> contato@alambiquerisadinha.com.br</li>
-          <li><i class="fab fa-instagram"></i> @alambiquerisadinha</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>© 2024 Alambique Risadinha Ltda. Todos os direitos reservados.</p>
-        <p class="footer-warning"><i class="fas fa-exclamation-triangle"></i> Beba com moderação. Proibido para menores de 18 anos.</p>
-      </div>
-    </div>
-  </footer>
+  <footer id="footer-placeholder" class="footer"></footer>
 
+  <script src="components/js/header.js"></script>
+  <script src="components/js/footer.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

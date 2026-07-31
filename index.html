@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alambique Risadinha – Tradição Mineira desde 1947</title>
-  <meta name="description" content="Cachaça artesanal de alambique com 77 anos de tradição em Piranga, Minas Gerais. Conheça Risadinha Prata, Risadinha Ouro e Velho Parol.">
+  <meta name="description" id="siteDescription"
+    content="Cachaça artesanal de alambique com 0 anos de tradição em Piranga, Minas Gerais. Conheça Risadinha Prata, Risadinha Ouro e Velho Parol.">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
 </head>
+
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="img/logo.png" alt="Alambique Risadinha Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-        <span class="logo-text-fallback" style="display:none">Alambique<br><em>Risadinha</em></span>
-      </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="produtos.html" class="nav-link">Produtos</a>
-        <a href="sobre.html" class="nav-link">Sobre</a>
-        <a href="contato.html" class="nav-link">Contato</a>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+  <header id="header-placeholder" class="navbar"></header>
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
@@ -39,7 +33,8 @@
     <div class="container hero-content">
       <p class="hero-eyebrow">Piranga · Minas Gerais · Desde 1947</p>
       <h1 class="hero-title">A Alegria da<br><em>Cachaça Verdadeira</em></h1>
-      <p class="hero-subtitle">77 anos de tradição artesanal, destilada no coração de Minas Gerais com paixão e respeito pela terra.</p>
+      <p class="hero-subtitle"><span id="heroYearsText" class="year-count">0</span> anos de tradição artesanal, destilada no coração de Minas Gerais com paixão e respeito
+        pela terra.</p>
       <div class="hero-btns">
         <a href="produtos.html" class="btn btn-primary">Conheça Nossos Produtos</a>
         <a href="sobre.html" class="btn btn-outline">Nossa História</a>
@@ -57,8 +52,11 @@
       <div class="about-strip-text">
         <span class="section-eyebrow">Nossa História</span>
         <h2 class="section-title">Tradição que<br>Passa de Geração em Geração</h2>
-        <p>Fundado em 1947, o Alambique Risadinha nasceu nas terras férteis de Piranga, no interior de Minas Gerais. Por mais de 77 anos, mantemos os segredos de uma produção artesanal feita com cana-de-açúcar selecionada, alambiques de cobre e o cuidado de quem ama cada gota que produz.</p>
-        <p>Nossa cachaça carrega a alma de Minas: simples, honesta, calorosa. O nome Risadinha reflete o espírito alegre de quem aprecia uma boa bebida em boa companhia.</p>
+        <p>Fundado em 1947, o Alambique Risadinha nasceu nas terras férteis de Piranga, no interior de Minas Gerais. Por
+          mais de <span class="year-count">0</span> anos, mantemos os segredos de uma produção artesanal feita com cana-de-açúcar selecionada,
+          alambiques de cobre e o cuidado de quem ama cada gota que produz.</p>
+        <p>Nossa cachaça carrega a alma de Minas: simples, honesta, calorosa. O nome Risadinha reflete o espírito alegre
+          de quem aprecia uma boa bebida em boa companhia.</p>
         <a href="sobre.html" class="btn btn-primary" style="margin-top:1.5rem">Saiba Mais</a>
       </div>
       <div class="about-strip-img">
@@ -70,7 +68,7 @@
             </div>
           </div>
           <div class="about-badge">
-            <span class="badge-number">77</span>
+            <span class="badge-number year-count" id="yearsExperience">0</span>
             <span class="badge-text">Anos de<br>Tradição</span>
           </div>
         </div>
@@ -89,22 +87,26 @@
         <div class="feature-card" data-aos="fade-up" data-delay="0">
           <div class="feature-icon"><i class="fas fa-seedling"></i></div>
           <h3>Cana Selecionada</h3>
-          <p>Utilizamos apenas cana-de-açúcar cultivada nas melhores terras da região de Piranga, garantindo o sabor inconfundível.</p>
+          <p>Utilizamos apenas cana-de-açúcar cultivada nas melhores terras da região de Piranga, garantindo o sabor
+            inconfundível.</p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-delay="100">
           <div class="feature-icon"><i class="fas fa-fire-alt"></i></div>
           <h3>Destilação em Cobre</h3>
-          <p>Nossos alambiques de cobre são peças históricas que conferem pureza e caráter único à nossa cachaça artesanal.</p>
+          <p>Nossos alambiques de cobre são peças históricas que conferem pureza e caráter único à nossa cachaça
+            artesanal.</p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-delay="200">
           <div class="feature-icon"><i class="fas fa-clock"></i></div>
           <h3>Envelhecimento Natural</h3>
-          <p>O tempo e a paciência são nossos maiores aliados. Cada lote envelhece no tempo certo, adquirindo cor, aroma e complexidade.</p>
+          <p>O tempo e a paciência são nossos maiores aliados. Cada lote envelhece no tempo certo, adquirindo cor, aroma
+            e complexidade.</p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-delay="300">
           <div class="feature-icon"><i class="fas fa-medal"></i></div>
           <h3>Qualidade Certificada</h3>
-          <p>Registrada no MAPA, nossa cachaça segue os mais rigorosos padrões de qualidade da produção artesanal brasileira.</p>
+          <p>Registrada no MAPA, nossa cachaça segue os mais rigorosos padrões de qualidade da produção artesanal
+            brasileira.</p>
         </div>
       </div>
     </div>
@@ -124,14 +126,16 @@
           <div class="product-img-wrap">
             <div class="product-icon prata">
               <!-- <i class="fas fa-wine-bottle"></i> -->
-              <img src="img/products/risadinha-prata.png" height="200" alt="Risadinha Prata" class="product-img" onerror="this.style.display='none'">
+              <img src="img/products/risadinha-prata.png" height="200" alt="Risadinha Prata" class="product-img"
+                onerror="this.style.display='none'">
             </div>
             <div class="product-badge-tag">Clássico</div>
           </div>
           <div class="product-info">
             <span class="product-tag">Cachaça Prata</span>
             <h3>Risadinha Prata</h3>
-            <p>Cachaça branca de alambique, cristalina e de sabor suave. Perfeita para drinks, caipirinhas e para quem aprecia o sabor puro da cana.</p>
+            <p>Cachaça branca de alambique, cristalina e de sabor suave. Perfeita para drinks, caipirinhas e para quem
+              aprecia o sabor puro da cana.</p>
             <ul class="product-specs">
               <li><i class="fas fa-check"></i> Destilada em alambique de cobre</li>
               <li><i class="fas fa-check"></i> Sabor suave e equilibrado</li>
@@ -145,14 +149,16 @@
           <div class="product-img-wrap">
             <div class="product-icon ouro">
               <!-- <i class="fas fa-wine-bottle"></i> -->
-              <img src="img/products/risadinha-ouro.png" height="200" alt="Risadinha Ouro" class="product-img" onerror="this.style.display='none'">
+              <img src="img/products/risadinha-ouro.png" height="200" alt="Risadinha Ouro" class="product-img"
+                onerror="this.style.display='none'">
             </div>
             <div class="product-badge-tag destaque">Mais Vendido</div>
           </div>
           <div class="product-info">
             <span class="product-tag">Cachaça Ouro</span>
             <h3>Risadinha Ouro</h3>
-            <p>Envelhecida em barris de madeira nobre, nossa cachaça Ouro apresenta cor âmbar dourada, aroma complexo e sabor aveludado.</p>
+            <p>Envelhecida em barris de madeira nobre, nossa cachaça Ouro apresenta cor âmbar dourada, aroma complexo e
+              sabor aveludado.</p>
             <ul class="product-specs">
               <li><i class="fas fa-check"></i> Envelhecida em madeira nobre</li>
               <li><i class="fas fa-check"></i> Cor âmbar dourada natural</li>
@@ -166,14 +172,16 @@
           <div class="product-img-wrap">
             <div class="product-icon Parol">
               <!-- <i class="fas fa-wine-bottle"></i> -->
-              <img src="img/products/velho-parol.png" height="200" alt="Velho Parol" class="product-img" onerror="this.style.display='none'">
+              <img src="img/products/velho-parol.png" height="200" alt="Velho Parol" class="product-img"
+                onerror="this.style.display='none'">
             </div>
             <div class="product-badge-tag premium">Premium</div>
           </div>
           <div class="product-info">
             <span class="product-tag">Cachaça Premium</span>
             <h3>Velho Parol</h3>
-            <p>A joia da nossa produção. Envelhecida por mais tempo em barris selecionados, o Velho Parol é para os verdadeiros apreciadores.</p>
+            <p>A joia da nossa produção. Envelhecida por mais tempo em barris selecionados, o Velho Parol é para os
+              verdadeiros apreciadores.</p>
             <ul class="product-specs">
               <li><i class="fas fa-check"></i> Longa maturação em barris</li>
               <li><i class="fas fa-check"></i> Complexidade e elegância únicos</li>
@@ -185,7 +193,8 @@
 
       </div>
       <div style="text-align:center; margin-top:3rem">
-        <a href="produtos.html" class="btn btn-outline-dark">Ver Todos os Produtos <i class="fas fa-arrow-right"></i></a>
+        <a href="produtos.html" class="btn btn-outline-dark">Ver Todos os Produtos <i
+            class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
@@ -194,7 +203,7 @@
   <section class="stats-section">
     <div class="stats-bg"></div>
     <div class="container stats-inner">
-      <div class="stat-item" data-target="77">
+      <div class="stat-item" data-target="0" id="yearsStatItem">
         <span class="stat-number" id="stat1">0</span>
         <span class="stat-plus">+</span>
         <span class="stat-label">Anos de Tradição</span>
@@ -228,32 +237,40 @@
       <div class="testimonials-slider" id="testimonialsSlider">
         <div class="testimonial-track" id="testimonialTrack">
           <div class="testimonial-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p>"A Risadinha Ouro é simplesmente a melhor cachaça que já provei. Suave, aromática e com um final longo e agradável. Piranga tem um tesouro nesse alambique!"</p>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"A Risadinha Ouro é simplesmente a melhor cachaça que já provei. Suave, aromática e com um final longo e
+              agradável. Piranga tem um tesouro nesse alambique!"</p>
             <div class="testimonial-author">
               <div class="author-avatar"><i class="fas fa-user"></i></div>
               <div><strong>Carlos Eduardo</strong><span>Belo Horizonte, MG</span></div>
             </div>
           </div>
           <div class="testimonial-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p>"Conheço o Alambique Risadinha há anos. O Velho Parol é um produto excepcional, digno dos melhores destilados do mundo. Tradição mineira em cada gota."</p>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Conheço o Alambique Risadinha há anos. O Velho Parol é um produto excepcional, digno dos melhores
+              destilados do mundo. Tradição mineira em cada gota."</p>
             <div class="testimonial-author">
               <div class="author-avatar"><i class="fas fa-user"></i></div>
               <div><strong>Ana Paula Ferreira</strong><span>São Paulo, SP</span></div>
             </div>
           </div>
           <div class="testimonial-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p>"Visitei o alambique em Piranga e fiquei encantado. A produção artesanal, o cuidado com cada detalhe e a hospitalidade mineira tornam tudo ainda mais especial."</p>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Visitei o alambique em Piranga e fiquei encantado. A produção artesanal, o cuidado com cada detalhe e a
+              hospitalidade mineira tornam tudo ainda mais especial."</p>
             <div class="testimonial-author">
               <div class="author-avatar"><i class="fas fa-user"></i></div>
               <div><strong>Roberto Souza</strong><span>Rio de Janeiro, RJ</span></div>
             </div>
           </div>
           <div class="testimonial-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-            <p>"A Risadinha Prata faz a melhor caipirinha que você vai tomar na vida. Leveza e sabor da cana fresca em cada sip. Produto de qualidade excepcional!"</p>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <p>"A Risadinha Prata faz a melhor caipirinha que você vai tomar na vida. Leveza e sabor da cana fresca em
+              cada sip. Produto de qualidade excepcional!"</p>
             <div class="testimonial-author">
               <div class="author-avatar"><i class="fas fa-user"></i></div>
               <div><strong>Mariana Lima</strong><span>Juiz de Fora, MG</span></div>
@@ -283,50 +300,7 @@
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="img/logo.png" alt="Alambique Risadinha Logo" class="footer-logo" onerror="this.style.display='none'">
-        <p>Cachaça artesanal produzida com tradição e amor desde 1947, no coração de Minas Gerais.</p>
-        <div class="social-links">
-          <a href="https://www.instagram.com/alambiquerisadinha/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </div>
-      <div class="footer-nav">
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </div>
-      <div class="footer-products">
-        <h4>Nossos Produtos</h4>
-        <ul>
-          <li><a href="produtos.html#prata">Risadinha Prata</a></li>
-          <li><a href="produtos.html#ouro">Risadinha Ouro</a></li>
-          <li><a href="produtos.html#Parol">Velho Parol</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h4>Contato</h4>
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Piranga, Minas Gerais – MG</li>
-          <li><i class="fas fa-envelope"></i> contato@alambiquerisadinha.com.br</li>
-          <li><i class="fab fa-instagram"></i> @alambiquerisadinha</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>© 2024 Alambique Risadinha Ltda. Todos os direitos reservados.</p>
-        <p class="footer-warning"><i class="fas fa-exclamation-triangle"></i> Beba com moderação. Proibido para menores de 18 anos.</p>
-      </div>
-    </div>
-  </footer>
+  <footer id="footer-placeholder" class="footer"></footer>
 
   <!-- Age Gate -->
   <div class="age-gate" id="ageGate">
@@ -341,7 +315,11 @@
       <small>Beba com moderação. É crime vender bebida alcoólica a menores de 18 anos (Lei 8.069/90).</small>
     </div>
   </div>
-
+  
+  <script src="components/js/header.js"></script>
+  <script src="components/js/footer.js"></script>
   <script src="js/main.js"></script>
+
 </body>
+
 </html>
