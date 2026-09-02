@@ -187,22 +187,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── CONTACT FORM ── */
   const contactForm = document.getElementById('contactForm');
+  const formSuccess = document.getElementById('formSuccess');
   if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
+    // O formulário usa FormSubmit (action no HTML). Não impedir o envio real.
+    contactForm.addEventListener('submit', function() {
       const btn = this.querySelector('[type="submit"]');
-      const success = document.getElementById('formSuccess');
-
-      btn.disabled = true;
-      btn.textContent = 'Enviando…';
-
-      setTimeout(() => {
-        contactForm.style.display = 'none';
-        if (success) success.style.display = 'block';
-      }, 1500);
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando…';
+      }
     });
-  }
 
+    // Após o FormSubmit redirecionar de volta, mostrar confirmação real.
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('enviado') === '1') {
+      contactForm.style.display = 'none';
+      if (formSuccess) formSuccess.style.display = 'block';
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }
   /* ── PRODUTO TABS (página produtos) ── */
   const filterBtns = document.querySelectorAll('.filter-btn');
   if (filterBtns.length) {
